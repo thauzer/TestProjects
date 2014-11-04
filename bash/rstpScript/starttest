@@ -1,0 +1,113 @@
+#!/bin/bash
+# start rstp daemon and logging on all remote machines
+
+if [ $# -eq 0 ]; then
+	echo "Usage: $0 [ipfile] [start|stop|restart|logfetch|cleanlogs|copyfiles|copykey]"
+	echo "The >>ipfile<< contains all the ips of the remote machines"
+	echo "Options:"
+	echo "		start - runs the bridgesetup script on the remote machine"
+	echo "		stop - runs the bridgeclose script on the remote machine"
+	echo "		restart - runs the bridgeclose, sleeps for 5 seconds and runs bridgesetup"
+	echo "		logfetch - fetches log files from the remote machine and stores them in a folder for each machine"
+	echo "		cleanlogs - removes the folders containing log files for each machine"
+	echo "		copyfiles - copys rstpd, rstpctl, bridge-stp, bridgesetup, bridgeclose and logbrstates files to remote machines"
+	echo "		copykey - copys the key to all remote machines"
+	echo "		remount - remount the file system on the remote machines"
+	exit 1;
+fi
+
+if [ ! -f $1 ]; then
+	echo "$1 - file doesn't exist"
+	exit 1
+fi
+
+ipfilename=$1
+cmd=$2
+
+machines=""
+while read line
+do
+	machines=`echo ${machines} ${line}`
+done < $ipfilename
+
+echo "$machines"
+
+user="root"
+target=""
+for remote in $machines
+do
+	echo "Machine: ${remote}"
+	target=${user}@${remote}
+	case "$cmd" in
+		copykey)
+			if [ -z "$3" ]; then
+				keyfile="/home/thauzer/.ssh/id_rsa.pub"
+				echo "No key specified, using default $keyfile"
+			else
+				keyfile=$3
+			fi
+			ssh ${target} "cat > ./.ssh/authorized_keys" < ${keyfile};
+			ssh ${target} 'chmod 600 ./.ssh/authorized_keys'
+		;;
+		copyfiles)
+			echo "Copying files"
+			copyfolder=./copyfiles
+			scp ${copyfolder}/rstpd ${target}:/sbin/
+			scp ${copyfolder}/rstpctl ${target}:/sbin/
+			scp ${copyfolder}/bridge-stp ${target}:/sbin/
+#			scp ${copyfolder}/bridgesetup ${target}:/sbin/
+#			scp ${copyfolder}/bridgeclose ${target}:/sbin/
+#			scp ${copyfolder}/logbrstates ${target}:/sbin/
+		;;
+		remount)
+			ssh ${target} 'mount /dev/fjffs2 -o remount,rw'
+		;;
+		killrstpd)
+			ssh ${target} 'killall rstpd'
+		;;
+		start)
+			echo "Setting up bridge"
+			ssh ${target} 'bridgesetup';
+		;;
+		stop)
+			echo "Removing bridge"
+			ssh ${target} 'bridgeclose';
+		;;
+		restart)
+			$0 stop;
+			sleep 5;
+			$0 start;
+		;;
+		stoplogging)
+			echo "Killing loggers"
+			ssh ${target} 'syslog.stop; killall logbrstates; killall tcpdump';
+		;;
+		logfetch)
+			echo "Fetching log files"
+			logfiles="messages messages.0 bridge_port_states.log tcpdumpbr.cap"
+			folder=./br${remote}
+			if [ ! -d ${folder} ]; then
+				mkdir ${folder}
+			fi
+	
+			for file in $logfiles
+			do
+				scp ${target}:/var/log/${file} ${folder}/${remote}${file}
+			done
+		;;
+		cleanlogs)
+			echo "Removing log folder"
+			folder=./br${remote}
+			if [ -d ${folder} ]; then
+				rm -rf ${folder}
+				if [ $? -eq 0 ]; then
+					echo "Removed ${folder} folder"
+				fi
+			fi
+		;;
+		*)
+			echo "Not a valid command"
+		;;
+	esac
+done
+

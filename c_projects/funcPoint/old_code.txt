@@ -1,0 +1,54 @@
+/*
+int function1(int argc, char** argv)
+{
+	printf("arg: %s\n", argv[2]);
+	printf("ichi\n");
+	return 0;
+}
+
+int function2(int argc, char** argv)
+{
+	printf("arg: %s\n", argv[2]);
+	printf("ni\n");
+	return 0;
+}
+
+int function3(int argc, char** argv)
+{
+	printf("arg: %s\n", argv[2]);
+	printf("san\n");
+	return 0;
+}
+
+struct comm
+{
+	char* text;
+	int (*funcPointer)(int argc, char** argv);
+};
+
+const struct comm comms[] = {
+	{"prva", function1},
+	{"druga", function2},
+	{"tretja", function3},
+};
+
+printf("Program started\n");
+
+	if (argc != 3) {
+		printf("arguments lacking\n");
+		return -1;
+	}
+
+	int i;
+
+	const struct comm *command;
+	for (i=0; i < (sizeof(comms) / sizeof(struct comm)); i++) {
+		if (!strcmp(comms[i].text, argv[1])) {
+			command = &comms[i];
+		}
+	}
+
+	command->funcPointer(argc, argv);
+
+	printf("Program exited\n");
+*/ 

@@ -1,0 +1,14 @@
+#!/bin/bash
+# simple rename test
+
+# add aaa_ to the start of a name
+echo "add aaa_ to the start"
+rename -v -n "s/^/aaa_/" file*
+
+# add _bbb to the end of a name
+echo "add _bbb to the end"
+rename -v -n "s/$/_bbb/" file*
+
+# replace the whole name
+echo "replace the whole name"
+rename -v -n "s/file(\d{1})$/aaaaaa$1/" file*

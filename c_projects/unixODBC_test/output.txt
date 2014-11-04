@@ -1,0 +1,806 @@
+Program started
+odbcTest
+Usage: odbcTest 'DSN-LESS connection string'
+eg. 'DRIVER={PostgreSQL Unicode};SERVER=localhost;Database=mn;UID=smaster;PWD=secret;'
+Using default connection string: DSN=testPostgres
+
+get_type_info
+connected. Returned connection string was:
+	DSN=testPostgres;DATABASE=temp_db;SERVER=localhost;PORT=5432;UID=postgres;PWD=hautom1q;SSLmode=disable;ReadOnly=no;Protocol=7.4;FakeOidIndex=0;ShowOidColumn=0;RowVersioning=0;ShowSystemTables=0;ConnSettings=;Fetch=100;Socket=4096;UnknownSizes=0;MaxVarcharSize=255;MaxLongVarcharSize=8190;Debug=1;CommLog=1;Optimizer=1;Ksqo=1;UseDeclareFetch=0;TextAsLongVarchar=1;UnknownsAsLongVarchar=0;BoolsAsChar=1;Parse=0;CancelAsFreeStmt=0;ExtraSysTablePrefixes=dd_;;LFConversion=0;UpdatableCursors=1;DisallowPremature=0;TrueIsMinus1=0;BI=0;ByteaAsLongVarBinary=0;UseServerSidePrepare=0;LowerCaseIdentifier=0;
+1. szColumnName: TYPE_NAME - szColumnValue: int8
+2. szColumnName: DATA_TYPE - szColumnValue: -5
+3. szColumnName: PRECISION - szColumnValue: 19
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 19
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 19
+6. szColumnName: CREATE_PARAMS - szColumnValue: 19
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: -5
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: -5
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: char
+2. szColumnName: DATA_TYPE - szColumnValue: -7
+3. szColumnName: PRECISION - szColumnValue: 1
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 1
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 1
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: char
+2. szColumnName: DATA_TYPE - szColumnValue: 1
+3. szColumnName: PRECISION - szColumnValue: 255
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: max. length
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 1
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 1
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: date
+2. szColumnName: DATA_TYPE - szColumnValue: 91
+3. szColumnName: PRECISION - szColumnValue: 10
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 1
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: date
+2. szColumnName: DATA_TYPE - szColumnValue: 9
+3. szColumnName: PRECISION - szColumnValue: 10
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 1
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: numeric
+2. szColumnName: DATA_TYPE - szColumnValue: 3
+3. szColumnName: PRECISION - szColumnValue: 28
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 28
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 28
+6. szColumnName: CREATE_PARAMS - szColumnValue: precision, scale
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 6
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 2
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 2
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: float8
+2. szColumnName: DATA_TYPE - szColumnValue: 8
+3. szColumnName: PRECISION - szColumnValue: 15
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 15
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 15
+6. szColumnName: CREATE_PARAMS - szColumnValue: 15
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 6
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 6
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: float8
+2. szColumnName: DATA_TYPE - szColumnValue: 6
+3. szColumnName: PRECISION - szColumnValue: 15
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 15
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 15
+6. szColumnName: CREATE_PARAMS - szColumnValue: 15
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 6
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 6
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: int4
+2. szColumnName: DATA_TYPE - szColumnValue: 4
+3. szColumnName: PRECISION - szColumnValue: 10
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 10
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 10
+6. szColumnName: CREATE_PARAMS - szColumnValue: 10
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 4
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 4
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: lo
+2. szColumnName: DATA_TYPE - szColumnValue: -4
+3. szColumnName: PRECISION - szColumnValue: -4
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 0
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: -4
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: -4
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: -4
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: text
+2. szColumnName: DATA_TYPE - szColumnValue: -1
+3. szColumnName: PRECISION - szColumnValue: 8190
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 0
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 0
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 0
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: numeric
+2. szColumnName: DATA_TYPE - szColumnValue: 2
+3. szColumnName: PRECISION - szColumnValue: 28
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 28
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 28
+6. szColumnName: CREATE_PARAMS - szColumnValue: precision, scale
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 6
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 2
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 2
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: float4
+2. szColumnName: DATA_TYPE - szColumnValue: 7
+3. szColumnName: PRECISION - szColumnValue: 7
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 7
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 7
+6. szColumnName: CREATE_PARAMS - szColumnValue: 7
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 7
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 7
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: int2
+2. szColumnName: DATA_TYPE - szColumnValue: 5
+3. szColumnName: PRECISION - szColumnValue: 5
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 5
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 5
+6. szColumnName: CREATE_PARAMS - szColumnValue: 5
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 5
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 5
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: time
+2. szColumnName: DATA_TYPE - szColumnValue: 92
+3. szColumnName: PRECISION - szColumnValue: 8
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 2
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 2
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: timestamptz
+2. szColumnName: DATA_TYPE - szColumnValue: 93
+3. szColumnName: PRECISION - szColumnValue: 19
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 38
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 3
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 3
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: time
+2. szColumnName: DATA_TYPE - szColumnValue: 10
+3. szColumnName: PRECISION - szColumnValue: 8
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 2
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 2
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: timestamptz
+2. szColumnName: DATA_TYPE - szColumnValue: 11
+3. szColumnName: PRECISION - szColumnValue: 19
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 38
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 3
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 3
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: int2
+2. szColumnName: DATA_TYPE - szColumnValue: -6
+3. szColumnName: PRECISION - szColumnValue: 5
+4. szColumnName: LITERAL_PREFIX - szColumnValue: 5
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: 5
+6. szColumnName: CREATE_PARAMS - szColumnValue: 5
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 0
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 5
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 5
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 10
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: bytea
+2. szColumnName: DATA_TYPE - szColumnValue: -3
+3. szColumnName: PRECISION - szColumnValue: 255
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 0
+9. szColumnName: SEARCHABLE - szColumnValue: 2
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 2
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: -3
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: -3
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: -3
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: varchar
+2. szColumnName: DATA_TYPE - szColumnValue: 12
+3. szColumnName: PRECISION - szColumnValue: 255
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: max. length
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 12
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: char
+2. szColumnName: DATA_TYPE - szColumnValue: -8
+3. szColumnName: PRECISION - szColumnValue: 255
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: max. length
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 1
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 1
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: varchar
+2. szColumnName: DATA_TYPE - szColumnValue: -9
+3. szColumnName: PRECISION - szColumnValue: 255
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: max. length
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 12
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+1. szColumnName: TYPE_NAME - szColumnValue: text
+2. szColumnName: DATA_TYPE - szColumnValue: -10
+3. szColumnName: PRECISION - szColumnValue: 8190
+4. szColumnName: LITERAL_PREFIX - szColumnValue: '
+5. szColumnName: LITERAL_SUFFIX - szColumnValue: '
+6. szColumnName: CREATE_PARAMS - szColumnValue: '
+7. szColumnName: NULLABLE - szColumnValue: 1
+8. szColumnName: CASE_SENSITIVE - szColumnValue: 1
+9. szColumnName: SEARCHABLE - szColumnValue: 3
+10. szColumnName: UNSIGNED_ATTRIBUTE - szColumnValue: 3
+11. szColumnName: MONEY - szColumnValue: 0
+12. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+13. szColumnName: LOCAL_TYPE_NAME - szColumnValue: 0
+14. szColumnName: MINIMUM_SCALE - szColumnValue: 0
+15. szColumnName: MAXIMUM_SCALE - szColumnValue: 0
+16. szColumnName: SQL_DATA_TYPE - szColumnValue: 0
+17. szColumnName: SQL_DATETIME_SUB - szColumnValue: 0
+18. szColumnName: NUM_PREC_RADIX - szColumnValue: 0
+19. szColumnName: INTERVAL_PRECISION - szColumnValue: 0
+|
+
+get_columns
+connected. Returned connection string was:
+	DSN=testPostgres;DATABASE=temp_db;SERVER=localhost;PORT=5432;UID=postgres;PWD=hautom1q;SSLmode=disable;ReadOnly=no;Protocol=7.4;FakeOidIndex=0;ShowOidColumn=0;RowVersioning=0;ShowSystemTables=0;ConnSettings=;Fetch=100;Socket=4096;UnknownSizes=0;MaxVarcharSize=255;MaxLongVarcharSize=8190;Debug=1;CommLog=1;Optimizer=1;Ksqo=1;UseDeclareFetch=0;TextAsLongVarchar=1;UnknownsAsLongVarchar=0;BoolsAsChar=1;Parse=0;CancelAsFreeStmt=0;ExtraSysTablePrefixes=dd_;;LFConversion=0;UpdatableCursors=1;DisallowPremature=0;TrueIsMinus1=0;BI=0;ByteaAsLongVarBinary=0;UseServerSidePrepare=0;LowerCaseIdentifier=0;
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: nodeid
+5. szColumnName: DATA_TYPE - szColumnValue: 4
+6. szColumnName: TYPE_NAME - szColumnValue: int4
+7. szColumnName: PRECISION - szColumnValue: 10
+8. szColumnName: LENGTH - szColumnValue: 4
+9. szColumnName: SCALE - szColumnValue: 0
+10. szColumnName: RADIX - szColumnValue: 10
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 4
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 4
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 4
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 1
+18. szColumnName: IS_NULLABLE - szColumnValue: 1
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 11
+20. szColumnName: FIELD_TYPE - szColumnValue: 23
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 1
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: data_release
+5. szColumnName: DATA_TYPE - szColumnValue: 1
+6. szColumnName: TYPE_NAME - szColumnValue: bpchar
+7. szColumnName: PRECISION - szColumnValue: 8
+8. szColumnName: LENGTH - szColumnValue: 8
+9. szColumnName: SCALE - szColumnValue: 8
+10. szColumnName: RADIX - szColumnValue: 8
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 2
+18. szColumnName: IS_NULLABLE - szColumnValue: 2
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 8
+20. szColumnName: FIELD_TYPE - szColumnValue: 1042
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 2
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: node_dataset
+5. szColumnName: DATA_TYPE - szColumnValue: 1
+6. szColumnName: TYPE_NAME - szColumnValue: bpchar
+7. szColumnName: PRECISION - szColumnValue: 20
+8. szColumnName: LENGTH - szColumnValue: 20
+9. szColumnName: SCALE - szColumnValue: 20
+10. szColumnName: RADIX - szColumnValue: 20
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 3
+18. szColumnName: IS_NULLABLE - szColumnValue: 3
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 20
+20. szColumnName: FIELD_TYPE - szColumnValue: 1042
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 3
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: transfer_id
+5. szColumnName: DATA_TYPE - szColumnValue: 12
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 32
+8. szColumnName: LENGTH - szColumnValue: 32
+9. szColumnName: SCALE - szColumnValue: 32
+10. szColumnName: RADIX - szColumnValue: 32
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 4
+18. szColumnName: IS_NULLABLE - szColumnValue: 4
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 32
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 4
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: client_ip_addr
+5. szColumnName: DATA_TYPE - szColumnValue: 12
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 40
+8. szColumnName: LENGTH - szColumnValue: 40
+9. szColumnName: SCALE - szColumnValue: 40
+10. szColumnName: RADIX - szColumnValue: 40
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 5
+18. szColumnName: IS_NULLABLE - szColumnValue: 5
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 40
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 5
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: monitored_user_name
+5. szColumnName: DATA_TYPE - szColumnValue: 12
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 64
+8. szColumnName: LENGTH - szColumnValue: 64
+9. szColumnName: SCALE - szColumnValue: 64
+10. szColumnName: RADIX - szColumnValue: 64
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 6
+18. szColumnName: IS_NULLABLE - szColumnValue: 6
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 64
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 6
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: table_name
+5. szColumnName: DATA_TYPE - szColumnValue: 12
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 255
+8. szColumnName: LENGTH - szColumnValue: 255
+9. szColumnName: SCALE - szColumnValue: 255
+10. szColumnName: RADIX - szColumnValue: 255
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 12
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 12
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 7
+18. szColumnName: IS_NULLABLE - szColumnValue: 7
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 255
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 7
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: mail_subject
+5. szColumnName: DATA_TYPE - szColumnValue: -1
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 256
+8. szColumnName: LENGTH - szColumnValue: 256
+9. szColumnName: SCALE - szColumnValue: 256
+10. szColumnName: RADIX - szColumnValue: 256
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: -1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: -1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 8
+18. szColumnName: IS_NULLABLE - szColumnValue: 8
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 256
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 8
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: msg_participants
+5. szColumnName: DATA_TYPE - szColumnValue: -1
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 1024
+8. szColumnName: LENGTH - szColumnValue: 1024
+9. szColumnName: SCALE - szColumnValue: 1024
+10. szColumnName: RADIX - szColumnValue: 1024
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: -1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: -1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 9
+18. szColumnName: IS_NULLABLE - szColumnValue: 9
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 1024
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 9
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: uri
+5. szColumnName: DATA_TYPE - szColumnValue: -1
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 2048
+8. szColumnName: LENGTH - szColumnValue: 2048
+9. szColumnName: SCALE - szColumnValue: 2048
+10. szColumnName: RADIX - szColumnValue: 2048
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: -1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: -1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 10
+18. szColumnName: IS_NULLABLE - szColumnValue: 10
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 2048
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 10
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: smtp_to
+5. szColumnName: DATA_TYPE - szColumnValue: -1
+6. szColumnName: TYPE_NAME - szColumnValue: varchar
+7. szColumnName: PRECISION - szColumnValue: 4096
+8. szColumnName: LENGTH - szColumnValue: 4096
+9. szColumnName: SCALE - szColumnValue: 4096
+10. szColumnName: RADIX - szColumnValue: 4096
+11. szColumnName: NULLABLE - szColumnValue: 1
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: -1
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: -1
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 255
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 11
+18. szColumnName: IS_NULLABLE - szColumnValue: 11
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 4096
+20. szColumnName: FIELD_TYPE - szColumnValue: 1043
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 11
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: collected_time
+5. szColumnName: DATA_TYPE - szColumnValue: 93
+6. szColumnName: TYPE_NAME - szColumnValue: timestamp
+7. szColumnName: PRECISION - szColumnValue: 19
+8. szColumnName: LENGTH - szColumnValue: 16
+9. szColumnName: SCALE - szColumnValue: 16
+10. szColumnName: RADIX - szColumnValue: 16
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 9
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 3
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 3
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 12
+18. szColumnName: IS_NULLABLE - szColumnValue: 12
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 19
+20. szColumnName: FIELD_TYPE - szColumnValue: 1114
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 12
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+1. szColumnName: TABLE_QUALIFIER - szColumnValue: temp_db
+2. szColumnName: TABLE_OWNER - szColumnValue: public
+3. szColumnName: TABLE_NAME - szColumnValue: temp_all_types_table
+4. szColumnName: COLUMN_NAME - szColumnValue: monitored_user_type
+5. szColumnName: DATA_TYPE - szColumnValue: 5
+6. szColumnName: TYPE_NAME - szColumnValue: int2
+7. szColumnName: PRECISION - szColumnValue: 5
+8. szColumnName: LENGTH - szColumnValue: 2
+9. szColumnName: SCALE - szColumnValue: 0
+10. szColumnName: RADIX - szColumnValue: 10
+11. szColumnName: NULLABLE - szColumnValue: 0
+12. szColumnName: REMARKS - szColumnValue: 
+13. szColumnName: COLUMN_DEF - szColumnValue: 
+14. szColumnName: SQL_DATA_TYPE - szColumnValue: 5
+15. szColumnName: SQL_DATETIME_SUB - szColumnValue: 5
+16. szColumnName: CHAR_OCTET_LENGTH - szColumnValue: 5
+17. szColumnName: ORDINAL_POSITION - szColumnValue: 13
+18. szColumnName: IS_NULLABLE - szColumnValue: 13
+19. szColumnName: DISPLAY_SIZE - szColumnValue: 6
+20. szColumnName: FIELD_TYPE - szColumnValue: 21
+21. szColumnName: AUTO_INCREMENT - szColumnValue: 0
+22. szColumnName: PHYSICAL NUMBER - szColumnValue: 13
+23. szColumnName: TABLE OID - szColumnValue: 364758
+|
+Program exited

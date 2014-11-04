@@ -1,0 +1,24 @@
+CC=gcc
+
+FIRST_CFLAGS= -I.
+FIRST_LDFLAGS=-lm
+
+FIRST_SRCS=common1.c main.c
+FIRST_EXEC=first
+
+SECOND_CFLAGS= -I.
+SECOND_LDFLAGS=-lm
+
+SECOND_SRCS=common2.c main.c
+SECOND_EXEC=second
+
+all: $(FIRST_EXEC)
+
+$(FIRST_EXEC):
+	$(CC) $(FIRST_CFLAGS) -o $(FIRST_EXEC) $(FIRST_SRCS) $(FIRST_LDFLAGS)
+
+$(SECOND_EXEC):
+	$(CC) $(SECOND_CFLAGS) -o $(SECOND_EXEC) $(SECOND_SRCS) $(SECOND_LDFLAGS)
+
+clean:
+	rm -f *.o
