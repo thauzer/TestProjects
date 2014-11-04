@@ -18,9 +18,9 @@ public class MainSsh{
 		// TODO Auto-generated method stub
 
 		try {
-//			String hostname = "193.77.24.121";
+//			String hostname = "111.111.111.111";
 //			String username = "admin";
-//			String password = "zhone";
+//			String password = "";
 			
 			String hostname = "192.168.0.85";
 			String username = "root";
