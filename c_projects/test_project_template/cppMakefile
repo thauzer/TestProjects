@@ -1,0 +1,21 @@
+CXX=g++
+RM=rm -f
+
+CXXFLAGS=-c -Wall -I.
+LDFLAGS=-lfcgi++ -lfcgi
+
+APP_SRCS=main.cpp
+APP_OBJS=$(APP_SRCS:.cpp=.o)
+APP_EXEC=hello_world
+
+all: $(APP_EXEC)
+
+#function pointers example
+$(APP_EXEC): $(APP_OBJS)
+        $(CXX) $(LDFLAGS) $(APP_OBJS) -o $@
+
+.c.o:
+        $(CXX) $(CXXFLAGS) $< -o $@
+
+clean:
+        $(RM) *.o $(APP_EXEC)
